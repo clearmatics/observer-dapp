@@ -9,33 +9,38 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
-code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-		monospace;
+div.transaction-loading {
+	margin: 0 auto;
+	width: 123px;
 }
-
-.validator-section {
-	width: 800px;
-	padding: 30px;
-	margin: 50px auto;
-	border: 1px solid #b7b3b3;
+div.transaction-loading img {
+	position: absolute;
 }
 
 .add-section div input {
 	padding: 4px;
 }
+
 .add-section {
 	width: 610px;
 	margin: 40px auto;
 }
+
 .add-btn {
 	float: right;
 	padding: 6px 24px;
 }
 
-.ReactTable .add-btn {
-	float: none;
+div.list-title {
+	margin: 20px auto;
+	width: 610px;
 }
+
+.list {
+	width: 610px;
+	margin: 0 auto;
+}
+
 .address {
 	width: 66%;
 	padding: 4px;
@@ -47,20 +52,8 @@ input:focus,
 	outline: none;
 }
 
-.remove-btn {
-	padding: 4px 15px;
-	margin-left: 30px;
-}
-
 ul {
 	list-style-type: none;
-}
-div.transaction-loading {
-	margin: 0 auto;
-	width: 123px;
-}
-div.transaction-loading img {
-	position: absolute;
 }
 
 .names {
@@ -80,10 +73,6 @@ div.transaction-loading img {
 	text-align: center;
 }
 
-div.list-title {
-	margin: 20px auto;
-	width: 610px;
-}
 #node {
 	padding: 4px 10px;
 	text-align: center;
@@ -101,46 +90,10 @@ button:hover {
 	background: #7396ad;
 	color: #fff;
 }
-.ReactTable .-pagination .-previous,
-.ReactTable .-pagination .-next {
-	width: 100px !important;
-	flex: none !important;
-}
-
-.validator-section span {
-	display: inline-block;
-}
-
-.ReactTable .-pagination .-center {
-	font-size: 12px;
-}
-
-.ReactTable .-pagination {
-	height: 35px;
-}
-
-img#footer-logo {
-	width: 160px;
-	float: left;
-}
-
-.footer {
-	margin: 40px auto;
-	width: 80%;
-	display: block;
-	height: 50px;
-}
-#copy-right {
-	float: right;
-	color: #fff;
-	font-weight: 600;
-}
-#main {
-	min-height: 1200px;
+button:disabled:hover {
 	background: #fff;
-	padding-bottom: 40px;
+	color: rgb(127, 127, 127);
 }
-
 #logo {
 	width: 200px;
 	display: inline-block;
@@ -194,24 +147,13 @@ img#footer-logo {
 	text-align: center;
 }
 
-.pending-users,
 .add-user {
 	width: 465px;
 	display: inline-block;
 	text-align: center;
 	float: right;
 }
-.pending-users .ReactTable .rt-td {
-	padding: 9.5px 5px;
-}
 
-.ReactTable .-pagination .-btn {
-	width: 83%;
-}
-.list {
-	width: 610px;
-	margin: 0 auto;
-}
 .users,
 .observers {
 	margin: 40px 0;
@@ -251,6 +193,51 @@ label {
 	height: 37px;
 }
 
-.main-content {
-	padding: 60px 0;
+.close {
+	position: absolute;
+	padding: 1px 14px;
+	font-size: 34px;
+	font-weight: 700;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+}
+.error {
+	opacity: 0;
+}
+.active-error {
+	opacity: 1;
+	color: #e00a0a;
+}
+
+.error-main {
+	display: block;
+	margin-top: 45px;
+}
+
+#error-logo {
+	width: 422px;
+	display: block;
+	margin: 15px auto;
+}
+.error-content {
+	padding: 40px 0;
+	font-size: 34px;
+	text-align: center;
+	color: #d08a00;
+	font-weight: 600;
+	line-height: 51px;
+}
+a {
+	color: #d08a00;
+	cursor: pointer;
+}
+#warning-logo {
+	width: 60px;
+	display: block;
+	margin: 47px auto 0;
+}
+.loading-contract {
+	display: block;
+	margin: 300px auto;
 }
