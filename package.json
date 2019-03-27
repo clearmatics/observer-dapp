@@ -5,7 +5,6 @@
   "dependencies": {
     "drizzle": "^1.2.4",
     "drizzle-react": "^1.2.0",
-    "ganache-cli": "^6.2.1",
     "lodash": "^4.17.11",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
@@ -16,22 +15,12 @@
     "reactjs-popup": "^1.3.2",
     "redux": "^3.7.2",
     "redux-thunk": "^2.3.0",
-    "solc": "^0.4.23",
-    "solhint": "^1.1.10",
-    "solidity-coverage": "^0.5.0 ",
-    "truffle": "^4.1.7",
-    "truffle-hdwallet-provider": "0.0.6",
-    "web3": "^1.0.0-beta.36"
+    "truffle": "^4.1.7"
   },
   "scripts": {
     "start": "react-scripts start",
-    "compile": "truffle compile",
     "build": "react-scripts build",
-    "deploy": "truffle deploy --network development",
-    "test": "truffle test --network development",
-    "test-app": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "testrpc": "ganache-cli --port 8545 --gasLimit 0xFFFFFFFFFFF --gasPrice 0 --networkId 1234 --deterministic grape crisp enroll avoid satoshi picnic term dice gown grocery situate depart"
+    "test": "react-scripts test --env=jsdom"
   },
   "eslintConfig": {
     "extends": "react-app"

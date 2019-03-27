@@ -13,6 +13,7 @@ class Observer extends React.Component {
 	handleAddressChange = e => {
 		this.setState({ node: e.target.value });
 	};
+
 	// get observers list
 	componentDidMount() {
 		const { drizzle } = this.props;

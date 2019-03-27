@@ -26,7 +26,7 @@ export default state => (
 					<div className="error-content">
 						MetaMask is not detected!
 						<br />
-						{'Please active or download it '}
+						{'Please activate or download it '}
 						<a
 							target="_blank"
 							href=" https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn?hl=en-GB"

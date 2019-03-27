@@ -241,3 +241,7 @@ a {
 	display: block;
 	margin: 300px auto;
 }
+
+.ReactTable .-pagination .-center {
+	font-size: 14px;
+}

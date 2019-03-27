@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Footer from '../Footer/Footer';
 import Observer from '../../Observer';
 import loadingImg from '../../assets/loadingIcon.svg';
+import MetaMaskMsg from '../../MetaMaskMsg';
 
 import './App.css';
 
@@ -27,6 +28,7 @@ class App extends Component {
 		this.unsubscribe();
 	}
 	render() {
+		if (typeof web3 === 'undefined') return <MetaMaskMsg />;
 		if (this.state.loading) return <img id="onLoad" src={loadingImg} alt="" />;
 		return (
 			<div className="App">
