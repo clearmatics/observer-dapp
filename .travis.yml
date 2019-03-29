@@ -1,0 +1,16 @@
+dist: bionic
+sudo: required
+
+services:
+- docker
+
+stages:
+  - "make"
+
+branches:
+  only:
+    - master
+
+jobs:
+  include:
+    - stage: "make"
