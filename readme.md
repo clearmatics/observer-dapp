@@ -11,3 +11,15 @@ Clone the repo
 Please note: MetaMask is having issues running on Firefox. This bug was reported back in August and we're awaiting a fix. Until then please use Chrome.
 
 The frontend will load on http://localhost:3000/
+
+### Docker
+To run the Observer frontend locally:
+```
+make build
+make run
+```
+
+To clean up:
+```
+make clean
+```
