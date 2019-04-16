@@ -6,7 +6,7 @@ Clone the repo
 
 - npm install
 - npm start
-- connect to [Metamask](https://metamask.io/) and create a new custom RPC with http://34.243.204.94:30003 as the RPC url
+- connect to [Metamask](https://metamask.io/) and create a new custom RPC with http://34.243.204.94:30005 as the RPC url
 
 Please note: MetaMask is having issues running on Firefox. This bug was reported back in August and we're awaiting a fix. Until then please use Chrome.
 
@@ -23,3 +23,7 @@ To clean up:
 ```
 make clean
 ```
+
+### About Observer
+
+A network needs at least four validators to function properly.
