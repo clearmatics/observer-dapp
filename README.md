@@ -1,5 +1,7 @@
 ## Observer Dapp on the live network Autonity network
 
+<img src="src/assets/observer.png" alt="drawing" width="1024" height="768">
+
 ### To run the application
 
 Clone the repo
